@@ -61,10 +61,11 @@
       var config = {
         dataUrl: buildUrl + "/PlankWeb.data",
         frameworkUrl: buildUrl + "/PlankWeb.framework.js",
+        codeUrl: buildUrl + "/PlankWeb.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        // companyName: "DefaultCompany",
-        // productName: "Plank",
-        // productVersion: "0.1",
+        companyName: "DefaultCompany",
+        productName: "Plank",
+        productVersion: "0.1",
         showBanner: unityShowBanner,
       };
 
@@ -90,14 +91,12 @@
         // config.devicePixelRatio = 1;
 
 
-
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
         canvas.style.width = "960px";
         canvas.style.height = "600px";
       }
-
 
       loadingBar.style.display = "block";
 
